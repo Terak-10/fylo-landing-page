@@ -1,0 +1,37 @@
+.nav-bar {
+    max-width: 1440px;
+    margin: 1rem auto 4rem auto;
+    min-height: 5rem;
+
+    display: flex;
+    align-items: center;
+    padding: 0 4vw;
+}
+
+.header {
+    display: flex;
+    max-width: 1440px;
+    margin: 1rem auto 4rem auto;
+    padding: 0 4vw;
+    min-height: 60vh;
+}
+
+
+.main-bcgi {
+    min-height: 7.2rem;
+    background: url(/images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto 4rem auto;
+    padding: 0 4vw 7rem 4vw;
+    min-height: 60vh;
+}
