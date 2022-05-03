@@ -31,7 +31,17 @@
     background-color: var(--Light-Grayish-Blue);
     display: flex;
     max-width: 1440px;
-    margin: 0 auto 4rem auto;
+    margin: 0 auto;
     padding: 0 4vw 7rem 4vw;
     min-height: 60vh;
+}
+
+.acces {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 4vw;
+    min-height: 25vh;
+    background-color: var(--Desaturated-Blue);  
 }
