@@ -14,6 +14,11 @@
     margin: 1rem auto 4rem auto;
     padding: 0 4vw;
     min-height: 60vh;
+
+    @media (max-width: 62.5em) {   // 1000 px
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 
@@ -34,6 +39,11 @@
     margin: 0 auto;
     padding: 0 4vw 7rem 4vw;
     min-height: 60vh;
+
+    @media (max-width: 62.5em) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
 
 .acces {
@@ -44,6 +54,10 @@
     padding: 0 4vw;
     min-height: 35vh;
     background-color: var(--Desaturated-Blue);  
+
+    @media (max-width: 62.5em) {
+        flex-direction: column;
+    }
 }
 
 .footer {
@@ -55,4 +69,8 @@
     padding: 0 4vw;
     min-height: 45vh;
     background-color: var(--Very-Dark-Blue);  
+
+    @media (max-width: 44em) {
+        flex-direction: column;
+    }
 }
