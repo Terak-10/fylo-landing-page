@@ -2,6 +2,7 @@
 .nav-bar {
     &_logo {
         margin-right: auto;
+        animation: pulse 3s 1s ease-out infinite;
     }
 
     &_logo:hover {
@@ -20,6 +21,11 @@
         text-decoration: none;
         color: var(--Very-Dark-Blue);
         font-family: 'Raleway', sans-serif;
+        transition: .3s all;
+    }
+
+    &_link:hover{
+        color: hsla(243, 87%, 12%, 0.67);
     }
 
     &_link:link:hover,
@@ -28,6 +34,11 @@
     }
 }
 
+@keyframes pulse {
+    100% {
+        transform: scale(1.2);
+    }
+}
 //Header
 .text-box {
     display: flex;
@@ -75,6 +86,12 @@
          color: #fff;
          font-weight: 700;
          border-radius: 10px;
+         transition: .3s all;
+     }
+
+     &_btn:hover {
+         cursor: pointer;
+         opacity: 70%;
      }
 
      &_btn:hover {
@@ -129,15 +146,23 @@
     border-bottom: 1px solid var(--Moderate-Cyan);
     padding-bottom: 0.1rem;
     margin-bottom: 4rem;
+    transition: .3s all;
 
     &_p {
         margin-right: 0.5rem;
         color: var(--Moderate-Cyan);
+        transition: .4s all;
+    }
+
+    &_p:hover {
+        margin-right: 0.7rem;
+        transform: translateY(-0.1rem);
     }
 }
 
 .active:hover {
     cursor: pointer;
+    opacity: 70%;
 }
 
 .card {
@@ -177,6 +202,11 @@
         font-size: 0.7rem;
     }
 }
+
+.card:hover {
+    cursor: pointer;
+}
+
 
 .photo-2 {
     flex: 1;
@@ -233,6 +263,12 @@
         color: #fff;
         font-weight: 700;
         border-radius: 5px;
+        transition: .3s all;
+    }
+
+    &_btn:hover {
+        background-color: hsl(224, 98%, 67%);
+        cursor: pointer;
     }
 }
 
@@ -279,6 +315,12 @@
     color: var(--Light-Gray);
     font-size: 0.85rem;
     text-decoration: none;
+    transition: .3s all;
+   }
+
+   &_link:link:hover,
+   &_link:visited:hover {
+       color: var(--Desaturated-Blue);
    }
 }
 
@@ -297,7 +339,13 @@
      color: var(--Light-Gray);
      font-size: 0.85rem;
      text-decoration: none;
+     transition: .3s all;
     }
+
+    &_link:link:hover,
+    &_link:visited:hover {
+       color: var(--Desaturated-Blue);
+   }
 }
 
 .icons{
@@ -306,5 +354,9 @@
 
     &_icon {
         margin-left: 1rem;
+    }
+
+    &_icon:hover {
+        cursor: pointer;
     }
 }

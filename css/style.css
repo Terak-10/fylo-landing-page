@@ -17,7 +17,8 @@ html {
   box-sizing: inherit; }
 
 .nav-bar_logo {
-  margin-right: auto; }
+  margin-right: auto;
+  animation: pulse 3s 1s ease-out infinite; }
 
 .nav-bar_logo:hover {
   cursor: pointer; }
@@ -31,10 +32,18 @@ html {
 .nav-bar_link:link, .nav-bar_link:visited {
   text-decoration: none;
   color: var(--Very-Dark-Blue);
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  transition: .3s all; }
+
+.nav-bar_link:hover {
+  color: rgba(7, 4, 57, 0.67); }
 
 .nav-bar_link:link:hover, .nav-bar_link:visited:hover {
   cursor: pointer; }
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.2); } }
 
 .text-box {
   display: flex;
@@ -73,7 +82,11 @@ html {
     background-color: var(--Bright-Blue);
     color: #fff;
     font-weight: 700;
-    border-radius: 10px; }
+    border-radius: 10px;
+    transition: .3s all; }
+  .action_btn:hover {
+    cursor: pointer;
+    opacity: 70%; }
   .action_btn:hover {
     cursor: pointer; }
 
@@ -113,13 +126,19 @@ html {
   width: max-content;
   border-bottom: 1px solid var(--Moderate-Cyan);
   padding-bottom: 0.1rem;
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  transition: .3s all; }
   .active_p {
     margin-right: 0.5rem;
-    color: var(--Moderate-Cyan); }
+    color: var(--Moderate-Cyan);
+    transition: .4s all; }
+  .active_p:hover {
+    margin-right: 0.7rem;
+    transform: translateY(-0.1rem); }
 
 .active:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 70%; }
 
 .card {
   background-color: #fff;
@@ -144,6 +163,9 @@ html {
   .card_p-2 {
     color: var(--Very-Dark-Blue);
     font-size: 0.7rem; }
+
+.card:hover {
+  cursor: pointer; }
 
 .photo-2 {
   flex: 1; }
@@ -186,7 +208,11 @@ html {
     background-color: var(--Bright-Blue);
     color: #fff;
     font-weight: 700;
-    border-radius: 5px; }
+    border-radius: 5px;
+    transition: .3s all; }
+  .action-field_btn:hover {
+    background-color: #5884fd;
+    cursor: pointer; }
 
 .contact_logo {
   margin-bottom: 1rem; }
@@ -214,7 +240,11 @@ html {
 .nav-1_link:link, .nav-1_link:visited {
   color: var(--Light-Gray);
   font-size: 0.85rem;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: .3s all; }
+
+.nav-1_link:link:hover, .nav-1_link:visited:hover {
+  color: var(--Desaturated-Blue); }
 
 .nav-2_ul {
   padding-top: 5.8rem;
@@ -226,13 +256,19 @@ html {
 .nav-2_link:link, .nav-2_link:visited {
   color: var(--Light-Gray);
   font-size: 0.85rem;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: .3s all; }
+
+.nav-2_link:link:hover, .nav-2_link:visited:hover {
+  color: var(--Desaturated-Blue); }
 
 .icons {
   margin-right: 10rem;
   padding-top: 1rem; }
   .icons_icon {
     margin-left: 1rem; }
+  .icons_icon:hover {
+    cursor: pointer; }
 
 .nav-bar {
   max-width: 1440px;
