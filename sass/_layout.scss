@@ -42,6 +42,17 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 4vw;
-    min-height: 25vh;
+    min-height: 35vh;
     background-color: var(--Desaturated-Blue);  
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 4vw;
+    min-height: 45vh;
+    background-color: var(--Very-Dark-Blue);  
 }
