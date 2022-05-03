@@ -188,3 +188,55 @@
     }
  
 }
+
+// Acces section
+
+.acces {
+   
+    &_text {
+        flex: 1;
+        font-family: 'Open Sans', sans-serif; 
+    }
+
+    &_h-1 {
+        margin-bottom: 1rem;
+        color: var(--Light-Grayish-Blue);
+        font-size: 1.8rem;
+    }
+
+    &_p {
+        width: 70%;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--Light-Grayish-Blue);
+    }
+}
+
+.action-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+
+    &_input {
+        margin-bottom: 0.9rem;
+        width: 25rem;
+        padding: 0.7rem 0.8rem;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.119);
+        color: var(--Light-Gray);
+    }
+
+    &_btn {
+        padding: 0.8rem  1.2rem ;
+        border: none;
+        background-color: var(--Bright-Blue);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+}
+
+// Footer section
+
